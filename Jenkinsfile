@@ -25,7 +25,7 @@ pipeline {
                 script {
                     try {
                         
-                        sh 'java -cp . org.junit.runner.JUnitCore EventTest'
+                        sh 'java event'
                     } catch (Exception e) {
                         echo 'No tests found or tests failed'
                     }
